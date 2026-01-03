@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="testCases.SC2_Verify_AddToCart">
+        <methods>
+          <include name="setup"/>
+          <include name="TC4_ClickOn_AddToCart"/>
+          <include name="TC7_EnterInvalidQuantity"/>
+          <include name="TC5_VerifyProductDisplayed_InShoppingCart"/>
+          <include name="TC6_EnterValidQuantity"/>
+        </methods>
+      </class> <!-- testCases.SC2_Verify_AddToCart -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
