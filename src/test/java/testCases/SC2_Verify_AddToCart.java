@@ -2,10 +2,10 @@ package testCases;
 
 import org.testng.annotations.*;
 
-import base.BaseClass;
-import pom.AddToCart;
+import base.BaseClass1;
+import pageObjects.AddToCart;
 
-public class SC2_Verify_AddToCart extends BaseClass {
+public class SC2_Verify_AddToCart extends BaseClass1 {
 	
 	AddToCart add; //Creating object of AddToCart class so that we can access in all test cases
 	

@@ -5,7 +5,8 @@
     <classes>
       <class name="testCases.SC2_Verify_AddToCart">
         <methods>
-          <include name="setup"/>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
           <include name="TC4_ClickOn_AddToCart"/>
           <include name="TC7_EnterInvalidQuantity"/>
           <include name="TC5_VerifyProductDisplayed_InShoppingCart"/>

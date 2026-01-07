@@ -1,13 +1,13 @@
-package pom;
+package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import base.BaseClass;
+import base.BaseClass1;
 
-public class AddToCart extends BaseClass {
+public class AddToCart extends BaseClass1 {
 	@FindBy(linkText = "iPhone") public WebElement iphonelink;
 	@FindBy(xpath = "(//button[@type='button'])[10]") public WebElement AddToCartbutton;
 	@FindBy(xpath = "(//span)[6]") public WebElement ShoppingCartIcon;

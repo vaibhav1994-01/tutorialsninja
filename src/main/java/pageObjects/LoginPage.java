@@ -1,24 +1,36 @@
-package pom;
+package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
-	@FindBy(xpath = "(//a[@class='dropdown-toggle'])[1]") public WebElement MyAccount;
-	@FindBy(linkText = "Login") public WebElement Login;
-	
+public class LoginPage extends BasePage {
+	public LoginPage(WebDriver driver) {
+		super(driver);
+	}
 
-public LoginPage(WebDriver driver) {
-	PageFactory.initElements(driver,this);
-}
-public void click_MyAccount() {
-	MyAccount.click();
-	System.out.println("Clicking on the My Account option on home page ");
-}
-public void click_Login() {
-	Login.click();
-	System.out.println("Clicking on Login option under My Account ");
-}
+	@FindBy(id = "input-email")
+	WebElement textEmailAddress;
+
+	@FindBy(id = "input-password")
+	WebElement textPassword;
+
+	@FindBy(xpath = "//input[@value=\"Login\"]")
+	WebElement btnLogin;
+
+	public void setEmailAddress(String email) {
+
+		textEmailAddress.sendKeys(email);
+	}
+
+	public void setPassword(String pass) {
+
+		textPassword.sendKeys(pass);
+	}
+
+	public void ClickLogin() {
+
+		btnLogin.click();
+	}
 }
