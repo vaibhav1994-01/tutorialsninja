@@ -67,11 +67,11 @@ public class ExtentReportTestNG {
 	        // 4️⃣ Configure report UI
 	        // ------------------------------
 	        reporter.config().setReportName(
-	                "14 Sep Framework - Regression/Smoke Suite"
+	                "tutorialsninja Framework - Regression/Smoke Suite"
 	        );
 
 	        reporter.config().setDocumentTitle(
-	                "14 Sep Framework Execution Results"
+	                "tutorialsninja Framework Execution Results"
 	        );
 
 	        // Set report theme (DARK / STANDARD)
@@ -89,7 +89,7 @@ public class ExtentReportTestNG {
 	        // 6️⃣ Add system & environment info
 	        // ------------------------------
 	        // These details appear in the report dashboard
-	        extent.setSystemInfo("Name", "Pratik Ubhe");
+	        extent.setSystemInfo("Name", "Vaibhav Gat");
 	        extent.setSystemInfo("Suite Name", "Regression");
 	        extent.setSystemInfo("OS", System.getProperty("os.name"));
 	        extent.setSystemInfo("OS Version", System.getProperty("os.version"));
